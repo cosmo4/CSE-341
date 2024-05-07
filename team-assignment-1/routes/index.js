@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const contactsRoute = require('./contacts')
 
-const baseController = require('../controllers/baseController');
 
 // GET /feed/posts
-router.get('/', baseController.getData);
+router.get('/contacts', contactsRoute);
 
 
 module.exports = router;
